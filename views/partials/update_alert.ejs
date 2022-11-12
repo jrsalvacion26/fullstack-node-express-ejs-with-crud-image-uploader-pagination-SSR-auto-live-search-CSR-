@@ -1,0 +1,13 @@
+<% if(update.length>0) {%>
+    <div class="alert alert-success alert-dismissible fade show mt-3" id="alertCloses" role="alert" style="margin: 3rem;">
+        <%= update %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="clss()"></button>
+<% } %>
+
+
+<script>
+    const alertsss = document.getElementById('alertCloses')
+    function clss(){
+        alertsss.style.display = "none"
+    }
+</script>
